@@ -17,6 +17,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 
@@ -78,6 +80,7 @@
                         class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400">
                     <textarea data-aos="fade-up" required placeholder="Message..." rows="4"
                         class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400"></textarea>
+                    <div class="g-recaptcha" data-sitekey="6LfDDVgrAAAAAB7GfG2NZtegHCBuIiw7N3Fop34z"></div>
                     <button data-aos="fade-up"
                         class="w-full py-3 px-10 font-medium text-center text-zinc-100 rounded-full bg-[#a21410] hover:opacity-80 transition-all duration-500 cursor-pointer">Send
                     </button>
@@ -95,6 +98,8 @@
 
     <div class="md:mt-16 mt-10" id="footer"></div>
 
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
 
     <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
