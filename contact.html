@@ -71,14 +71,15 @@
                 </h2>
             </div>
             <div class="flex items-center md:mt-10 mt-6 justify-between md:gap-24 gap-14 md:flex-row flex-col">
-                <form action="" class="w-full">
-                    <input data-aos="fade-up" required type="text" placeholder="Enter Your Name"
+                <form action="https://api.web3forms.com/submit" method="POST" class="w-full">
+                    <input type="hidden" name="access_key" value="f895132b-9c8a-40a2-890e-03a6791213bc">
+                    <input name="name" data-aos="fade-up" required type="text" placeholder="Enter Your Name"
                         class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400">
-                    <input data-aos="fade-up" required type="email" placeholder="Enter Your Email"
+                    <input name="email" data-aos="fade-up" required type="email" placeholder="Enter Your Email"
                         class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400">
-                    <input data-aos="fade-up" required type="number" placeholder="Enter Your Number"
+                    <input name="number" data-aos="fade-up" required type="number" placeholder="Enter Your Number"
                         class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400">
-                    <textarea data-aos="fade-up" required placeholder="Message..." rows="4"
+                    <textarea name="message" data-aos="fade-up" required placeholder="Message..." rows="4"
                         class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400"></textarea>
                     <div class="g-recaptcha" data-sitekey="6LfDDVgrAAAAAB7GfG2NZtegHCBuIiw7N3Fop34z"></div>
                     <button data-aos="fade-up"
