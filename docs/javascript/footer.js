@@ -16,30 +16,6 @@ footer.innerHTML = `
                     <li><a href="/gallery.html" class="hover:text-[#a21410] transition-all duration-500">Gallery</a>
                     </li>
                 </ul>
-                <div data-aos="fade-up" class="flex items-center justify-center text-zinc-600 text-2xl gap-8 mt-7">
-                    <a href="">
-                        <i class="fa-brands transition-all duration-500 hover:text-[#a21410] fa-instagram"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands transition-all duration-500 hover:text-[#a21410] fa-facebook-f"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands transition-all duration-500 hover:text-[#a21410] fa-x-twitter"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands transition-all duration-500 hover:text-[#a21410] fa-tiktok"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands transition-all duration-500 hover:text-[#a21410] fa-youtube"></i>
-                    </a>
-                </div>
-
-                <div data-aos="fade-up" class="flex items-center justify-center mt-5 ">
-                    <a href="tel:+01267275330"
-                        class="text-center text-lg text-zinc-700 hover:text-[#a21410] transition-all duration-500 transition-all">
-                        Tel: 01267 275 330
-                    </a>
-                </div>
                 <div
                     class="border-t md:flex-row flex-col gap-5 border-gray-200 pt-5 flex items-center justify-between mt-8">
                     <span class="text-lg text-gray-700 text-center block">© <span id="copyright"></span> Butchers of
