@@ -4,7 +4,7 @@ footer.innerHTML = `
         <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="mx-auto">
                 <div
-                    class="border-t md:flex-row flex-col gap-5 border-gray-200 pt-5 flex items-center justify-between">
+                    class="border-t md:flex-row flex-col gap-5 border-gray-200 pt-5 flex items-center justify-between ">
                     <span class="text-lg text-gray-700 text-center block">© <span id="copyright"></span> Butchers of
                         Llanddarog. All rights reserved.</span>
                     <a href="#"
