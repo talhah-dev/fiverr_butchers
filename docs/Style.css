@@ -45,7 +45,7 @@ input:user-invalid {
 }
 
 .storyBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/Story1.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/story4.jpg) center/cover no-repeat;
 }
 
 .menuBanner {
