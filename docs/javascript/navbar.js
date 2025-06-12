@@ -8,7 +8,7 @@ navbar.innerHTML = `
         </a>
         <div class="flex items-center gap-10">
             <div class="lg:flex items-center gap-10 hidden">
-                <ul data-aos="fade-left" class="lg:flex hidden items-center text-zinc-800 gap-10">
+                <ul id="navbarLinks" data-aos="fade-left" class="lg:flex hidden items-center text-zinc-800 gap-10">
                     <li><a id="nav-home" href="/index.html" class="hover:text-[#a21410] navUnderLine transition-all duration-500">Home</a></li>
                     <li><a id="nav-story" href="/story.html" class="hover:text-[#a21410] navUnderLine transition-all duration-500">Our Story</a></li>
                     <li><a id="nav-menu" href="/menu.html" class="hover:text-[#a21410] navUnderLine transition-all duration-500">Our Menu</a></li>
@@ -54,24 +54,16 @@ navbar.innerHTML = `
     <div class="lg:h-24 h-20"></div>
 `
 
-const path = window.location.pathname;
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll("#navbarLinks a");
 
-const navLinks = {
-    "/index.html": "nav-home",
-    "/story.html": "nav-story",
-    "/menu.html": "nav-menu",
-    "/future-event.html": "nav-events",
-    "/gallery.html": "nav-gallery",
-    "/opening-hours.html": "nav-hours"
-};
-
-const activeLinkId = navLinks[path];
-if (activeLinkId) {
-    const activeLink = document.getElementById(activeLinkId);
-    if (activeLink) {
-        activeLink.classList.add("navUnderLineActive", "text-[#a21410]");
-    }
-}
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPath) {
+            link.classList.add("navUnderLineActive", "text-[#a21410]");
+        }
+    });
+});
 
 
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
