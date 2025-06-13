@@ -23,7 +23,7 @@
 <body class="">
 
     <div id="bottomToTopScroll"></div>
-     <nav class="fixed top-0 left-0 w-full bg-white z-40">
+    <nav class="fixed top-0 left-0 w-full bg-white z-40">
         <div class="max-w-7xl mx-auto flex justify-between items-center w-full lg:p-5 p-3 lg:h-24 h-20">
             <a data-aos="fade-right" href="/index.html" class="flex items-center justify-center lg:justify-start">
                 <img src="/docs/assets/images/logo.png" class="lg:h-20 h-16" alt="logo">
@@ -105,8 +105,7 @@
     </section>
 
     <div class="p-2 md:p-0">
-        <section
-            class="md:p-14 p-4 md:mt-16 mt-10  max-w-7xl mx-auto rounded-xl py-10 bg-[#151515]">
+        <section class="md:p-14 p-4 md:mt-16 mt-10  max-w-7xl mx-auto rounded-xl py-10 bg-[#151515]">
             <div class="md:flex-row flex-col flex items-center justify-between md:gap-14 gap-10">
                 <div class="mx-auto md:max-w-[55%]">
                     <div class="">
@@ -115,15 +114,18 @@
                         </h2>
                     </div>
                     <div class="flex items-center md:mt-10 mt-6 justify-between md:gap-24 gap-14 md:flex-row flex-col">
-                        <form action="" class="w-full">
-                            <input data-aos="fade-up" required type="text" placeholder="Enter Your Name"
+                        <form action="https://api.web3forms.com/submit" method="POST" class="w-full">
+                            <input type="hidden" name="access_key" value="768b514f-3e1a-4b97-8b3e-9d2cb2f70340">
+                            <input name="Name" data-aos="fade-up" required type="text" placeholder="Enter Your Name"
                                 class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400">
-                            <input data-aos="fade-up" required type="email" placeholder="Enter Your Email"
+                            <input name="Email" data-aos="fade-up" required type="email" placeholder="Enter Your Email"
                                 class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400">
-                            <input data-aos="fade-up" required type="number" placeholder="Enter Your Number"
+                            <input name="Number" data-aos="fade-up" required type="number" placeholder="Enter Your Number"
                                 class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400">
-                            <textarea data-aos="fade-up" required placeholder="Message..." rows="4"
+                            <textarea name="Message" data-aos="fade-up" required placeholder="Message..." rows="4"
                                 class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400"></textarea>
+                            <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                             <button data-aos="fade-up"
                                 class="w-full py-3 px-10 font-medium text-center text-zinc-100 rounded-full bg-[#a21410] hover:opacity-80 transition-all duration-500 cursor-pointer">Send
                             </button>
@@ -134,15 +136,17 @@
                     <div data-aos="fade-up" class="w-full text-center bg-[#2a2a2a] mb-4 py-5 rounded-2xl">
                         <i class="fa-solid fa-envelope text-3xl text-zinc-400 "></i>
                         <h2 class="text-center text-zinc-300 mt-3 font-medium text-xl">Write to us</h2>
-                        <a href="mailto:www.butchersofllanddarog.co.uk"
-                            class="text-zinc-400 mt-1 text-sm">www.butchersofllanddarog.co.uk</a>
+                        <a href="mailto:contact@butchersofllanddarog.com"
+                            class="text-zinc-400 mt-1 text-sm">contact@butchersofllanddarog.com</a>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="200" class="w-full text-center bg-[#2a2a2a] mb-4 py-5 rounded-2xl">
+                    <div data-aos="fade-up" data-aos-delay="200"
+                        class="w-full text-center bg-[#2a2a2a] mb-4 py-5 rounded-2xl">
                         <i class="fa-solid fa-phone text-3xl text-zinc-400 "></i>
                         <h2 class="text-center text-zinc-300 mt-3 font-medium text-xl">Telephone</h2>
                         <a href="tel:+01267275330" class="text-zinc-400 mt-1 text-sm">01267 275 330</a>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="400" class="w-full text-center bg-[#2a2a2a] py-5 rounded-2xl">
+                    <div data-aos="fade-up" data-aos-delay="400"
+                        class="w-full text-center bg-[#2a2a2a] py-5 rounded-2xl">
                         <i class="fa-solid fa-location-dot text-4xl text-zinc-400 "></i>
                         <h2 class="text-center text-zinc-300 mt-3 font-medium text-xl">Location</h2>
                         <a href="tel:+01267275330" class="text-zinc-400 mt-1 text-sm">THE
@@ -151,7 +155,8 @@
                     <div data-aos="fade-up" data-aos-delay="500"
                         class="flex items-center justify-center text-zinc-500 md:text-3xl text-2xl gap-12 mt-8">
                         <a target="_blank" href="https://www.instagram.com/thebutchersofllanddarog/">
-                            <i class="fa-brands transition-all md:text-4xl duration-500 hover:text-[#a21410] fa-instagram"></i>
+                            <i
+                                class="fa-brands transition-all md:text-4xl duration-500 hover:text-[#a21410] fa-instagram"></i>
                         </a>
                         <a target="_blank" href="https://www.facebook.com/butchersofllanddarog/">
                             <i class="fa-brands transition-all duration-500 hover:text-[#a21410] fa-facebook-f"></i>
@@ -168,7 +173,7 @@
         </section>
     </div>
 
-     <div class="banner md:mt-20 mt-10">
+    <div class="banner md:mt-20 mt-10">
         <section class="max-w-xl flex min-h-screen items-center justify-center w-full mx-auto p-5">
             <div class="bg-white w-full md:p-10 p-5 rounded-xl" data-aos="fade-up">
                 <img src="/docs/assets/images/logo.png" class="h-24 mx-auto" alt="">
