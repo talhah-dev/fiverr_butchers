@@ -114,22 +114,36 @@
                         </h2>
                     </div>
                     <div class="flex items-center md:mt-10 mt-6 justify-between md:gap-24 gap-14 md:flex-row flex-col">
-                        <form action="https://api.web3forms.com/submit" method="POST" class="w-full">
+                        <form id="contact-form" class="w-full">
                             <input type="hidden" name="access_key" value="768b514f-3e1a-4b97-8b3e-9d2cb2f70340">
+
                             <input name="Name" data-aos="fade-up" required type="text" placeholder="Enter Your Name"
                                 class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400">
+
                             <input name="Email" data-aos="fade-up" required type="email" placeholder="Enter Your Email"
                                 class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400">
-                            <input name="Number" data-aos="fade-up" required type="number" placeholder="Enter Your Number"
+
+                            <input name="Number" data-aos="fade-up" required type="number"
+                                placeholder="Enter Your Number"
                                 class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400">
+
                             <textarea name="Message" data-aos="fade-up" required placeholder="Message..." rows="4"
                                 class="w-full mb-5 py-2 placeholder:text-zinc-300 text-white border-b border-zinc-400"></textarea>
+
                             <!-- Honeypot Spam Protection -->
                             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                            <button data-aos="fade-up"
-                                class="w-full py-3 px-10 font-medium text-center text-zinc-100 rounded-full bg-[#a21410] hover:opacity-80 transition-all duration-500 cursor-pointer">Send
+
+                            <button type="submit" data-aos="fade-up"
+                                class="w-full py-3 px-10 font-medium text-center text-zinc-100 rounded-full bg-[#a21410] hover:opacity-80 transition-all duration-500 cursor-pointer">
+                                Send
                             </button>
                         </form>
+
+                        <!-- ✅ Success Message Popup -->
+                        <div id="success-popup"
+                            class="fixed top-10 border border-zinc-300 w-80 fadeIn hidden md:right-10 bg-white text-zinc-700 px-6 py-4 rounded-lg shadow-lg z-50">
+                            We've received your message. We'll be in touch soon!
+                        </div>
                     </div>
                 </div>
                 <div class="md:max-w-[45%] w-full">
@@ -206,6 +220,43 @@
     <script src="./docs/javascript/global.js"></script>
     <script src="./docs/javascript/navbar.js"></script>
     <script src="./docs/javascript/footer.js"></script>
+    <script>
+        const form = document.getElementById('contact-form');
+        const successPopup = document.getElementById('success-popup');
+
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault(); // Stop default form submission
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // Show success popup
+                    successPopup.classList.remove('hidden');
+
+                    // Hide after 3 seconds
+                    setTimeout(() => {
+                        successPopup.classList.add('hidden');
+                    }, 3000);
+
+                    // Reset form
+                    form.reset();
+                } else {
+                    alert('Something went wrong. Please try again.');
+                }
+            } catch (error) {
+                console.error(error);
+                alert('Error while submitting form.');
+            }
+        });
+    </script>
 </body>
 
 </html>
