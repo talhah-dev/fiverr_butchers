@@ -45,7 +45,7 @@ input:user-invalid {
 }
 
 .storyBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/story4.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/1.jpg) center/cover no-repeat;
 }
 
 .menuBanner {
@@ -53,7 +53,7 @@ input:user-invalid {
 }
 
 .childernBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/childern.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/ChildMenu.jpg) center/cover no-repeat;
 }
 
 .eveningBanner {
@@ -61,7 +61,7 @@ input:user-invalid {
 }
 
 .lunchBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/lunch.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/LunchMenu.jpg) center/cover no-repeat;
 }
 
 .galleryBanner {
@@ -74,7 +74,12 @@ input:user-invalid {
 }
 
 .futureBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(./assets/images/Story2.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(./assets/images/EventTopImage.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+.OpeningHoursBanner {
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(./assets/images/OpeningHours.jpg) center/cover no-repeat;
     background-attachment: fixed;
 }
 
