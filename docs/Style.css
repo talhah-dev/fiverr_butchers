@@ -41,31 +41,31 @@ input:user-invalid {
 }
 
 .homeBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/home.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(/docs/assets/images/home.jpg) center/cover no-repeat;
 }
 
 .storyBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/1.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(/docs/assets/images/1.jpg) center/cover no-repeat;
 }
 
 .menuBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/Menu3.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(/docs/assets/images/Menu3.jpg) center/cover no-repeat;
 }
 
 .childernBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/pizzaChips.JPG) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(/docs/assets/images/pizzaChips.JPG) center/cover no-repeat;
 }
 
 .eveningBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/evening.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(/docs/assets/images/evening.jpg) center/cover no-repeat;
 }
 
 .lunchBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/LunchMenu.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(/docs/assets/images/LunchMenu.jpg) center/cover no-repeat;
 }
 
 .galleryBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.603)), url(/docs/assets/images/Gallery.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(/docs/assets/images/Gallery.jpg) center/cover no-repeat;
 }
 
 .banner {
@@ -74,12 +74,12 @@ input:user-invalid {
 }
 
 .futureBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(./assets/images/EventTopImage.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(./assets/images/EventTopImage.jpg) center/cover no-repeat;
     background-attachment: fixed;
 }
 
 .OpeningHoursBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(./assets/images/OpeningHours.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(./assets/images/Gallery/gallery\ \(2\).jpg) center/cover no-repeat;
     background-attachment: fixed;
 }
 
